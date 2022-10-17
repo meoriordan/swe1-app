@@ -22,4 +22,4 @@ deploy:
   env: "[ENV NAME]"
   bucket_name: "[BUCKET NAME]"
   on:
-    branch: [BRANCH]
+    branch: main
