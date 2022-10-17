@@ -8,7 +8,7 @@ install:
 script:
   - black ./
   - flake8 ./
-  - coverage run ratenyu/manage.py test
+  - coverage run ebdjango/manage.py test
 
 after_success:
   coveralls
