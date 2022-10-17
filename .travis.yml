@@ -1,1 +1,14 @@
 language: python
+python:
+  - "3.9"
+
+install:
+  - pip install -r requirements.txt
+
+script:
+  - black ./
+  - flake8 ./
+  - coverage run ratenyu/manage.py test
+
+after_success:
+  coveralls
